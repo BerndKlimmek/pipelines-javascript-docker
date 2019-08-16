@@ -1,4 +1,13 @@
 # Docker
+- task: Kubernetes@1
+  inputs:
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceEndpoint: 'bkKubConnect'
+    command: 
+    secretType: 'dockerRegistry'
+    containerRegistryType: 'Azure Container Registry'
+    azureSubscriptionEndpointForSecrets: 'EU-SageDE-S100Cloud-Development(02d2e387-15ef-4b18-9c77-eaed831ea442)'
+    azureContainerRegistry: 'devsagebk.azurecr.io'
 # Build a Docker image 
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
